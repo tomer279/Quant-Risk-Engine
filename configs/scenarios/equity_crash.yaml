@@ -1,0 +1,11 @@
+name: equity_crash
+kind: hypothetical
+description: "Equities down, vol up, correlations up; TLT/GLD config shocks."
+asset_shocks:
+  SPY: -0.20
+  QQQ: -0.25
+  TLT: 0.05
+  GLD: 0.02
+vol_multiplier: 1.5
+correlation_inflation: 0.30
+apply_to_historical: true

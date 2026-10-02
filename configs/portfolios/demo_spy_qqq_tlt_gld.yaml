@@ -1,0 +1,7 @@
+name: demo_spy_qqq_tlt_gld
+notional: 1000000
+positions:
+  SPY: 0.40
+  QQQ: 0.20
+  TLT: 0.25
+  GLD: 0.15

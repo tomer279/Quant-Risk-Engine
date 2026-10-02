@@ -1,0 +1,15 @@
+universe:
+  symbols:
+    - SPY
+    - QQQ
+    - TLT
+    - GLD
+date_range:
+  start: "2015-01-01"
+  end: null
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  artifacts_dir: data/artifacts
+logging:
+  level: INFO

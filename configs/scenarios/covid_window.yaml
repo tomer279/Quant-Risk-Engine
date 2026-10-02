@@ -1,0 +1,5 @@
+name: covid_window
+kind: historical_episode
+start: "2020-02-15"
+end: "2020-04-15"
+description: "COVID crash window (illustrative)."
