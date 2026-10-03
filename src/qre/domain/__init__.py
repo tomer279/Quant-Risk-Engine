@@ -20,10 +20,17 @@ from qre.domain.enums import ScenarioKind
 from qre.domain.errors import (
     ConfigError,
     DataValidationError,
+    ModelCalibrationError,
     PortfolioError,
     QreError,
 )
-from qre.domain.risk import HistoricalRiskResult, RiskSummary
+from qre.domain.risk import (
+    CalibrationWindow,
+    HistoricalRiskResult,
+    MonteCarloRiskResult,
+    MonteCarloRunConfig,
+    RiskSummary,
+)
 from qre.domain.scenarios import (
     AssetContributions,
     HistoricalEpisodeScenario,
@@ -53,5 +60,9 @@ __all__ = [
     "AssetContributions",
     "InstantaneousShockResult",
     "StressAnalysisResult",
-    "ScenarioKind"
+    "ScenarioKind",
+    "ModelCalibrationError",
+    "MonteCarloRiskResult",
+    "MonteCarloRunConfig",
+    "CalibrationWindow",
 ]

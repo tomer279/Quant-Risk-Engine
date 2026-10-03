@@ -11,9 +11,9 @@ factor screening). QRE does not rebuild VIP.
 
 ## Status
 
-Milestones **M0–M2 complete** (foundations, historical VaR/ES, stress +
-linear contributions). Later milestones (Monte Carlo, GARCH, …) are planned
-in `plan.md` and not implemented yet.
+Milestones **M0–M3 complete** (foundations, historical VaR/ES, stress +
+linear contributions, Gaussian Monte Carlo with analytic validation).
+Later milestones (Student-t / GARCH, …) are planned in `plan.md`.
 
 See `plan.md` and `docs/milestones/`.
 
@@ -39,8 +39,11 @@ qre analyze --alpha 0.95 --alpha 0.99
 qre stress --scenario configs/scenarios/equity_crash.yaml
 qre stress --portfolio configs/portfolios/demo_spy_qqq_tlt_gld.yaml --scenario configs/scenarios/equity_crash.yaml
 qre stress --scenario configs/scenarios/covid_window.yaml --alpha 0.95 --alpha 0.99
+qre mc --portfolio configs/portfolios/demo_spy_qqq_tlt_gld.yaml
+qre mc --n-paths 50000 --seed 42 --alpha 0.95 --alpha 0.99
 ```
 
 Parquet output lands under data/raw/{SYMBOL}/ohlcv.parquet.
 
-Ingest and risk analysis arrive in later milestones.
+Artifacts land under `data/artifacts/` (`historical/`, stress runs, `monte_carlo/`).
+Parquet market data lives under `data/raw/{SYMBOL}/ohlcv.parquet`.

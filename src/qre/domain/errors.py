@@ -10,6 +10,10 @@ DataValidationError
     Invalid market or domain data.
 PortfolioError
     Invalid portfolio or weight definitions.
+PersistenceError
+    Failure to load or save data or artifacts.
+ModelCalibrationError
+    Failure to calibrate a return model.
 """
 
 
@@ -30,3 +34,6 @@ class PortfolioError(QreError):
 
 class PersistenceError(QreError):
     """Raised when loading or saving data or artifacts fails."""
+
+class ModelCalibrationError(QreError):
+    """Raised when a return model cannot be calibrated."""

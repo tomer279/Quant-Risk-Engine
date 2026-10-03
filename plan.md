@@ -21,13 +21,13 @@ forecast diary). Optionally *consume* VIP artifacts later as vol inputs.
 | M0 | Foundations (package, domain, config, ingest spine) | DONE (2026-10-02) |
 | M1 | Historical portfolio risk (VaR / ES) | DONE (2026-10-02) |
 | M2 | Historical + hypothetical stress + asset contribution | DONE (2026-10-02) |
-| M3 | Gaussian Monte Carlo + analytic validation | NOT STARTED |
+| M3 | Gaussian Monte Carlo + analytic validation | DONE (2026-10-03) |
 | M4 | Student-t + EWMA/GARCH (thin) + model comparison | NOT STARTED |
 | M5 | Thin stochastic / path model + numerics | NOT STARTED |
 | M6 | Attribution + model-risk report (flagship demo) | NOT STARTED |
 | M7 | Advanced extension (only if justified) | DEFERRED |
 
-**Current focus:** Milestone 3.
+**Current focus:** Milestone 4.
 
 **Operating mode:** Prefer Ask-mode design → user implements → Ask-mode review.
 Agents must not expand scope beyond the active milestone’s locked section.
@@ -414,7 +414,7 @@ stress loss + contributions report.
 
 ---
 
-### Milestone 3 — Monte Carlo engine — NOT STARTED
+### Milestone 3 — Monte Carlo engine — DONE (2026-10-03)
 
 **Motivation.** Forward-looking loss distribution under a calibrated Gaussian
 model.

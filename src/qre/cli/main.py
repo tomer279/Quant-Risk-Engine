@@ -13,7 +13,12 @@ from typing import Annotated
 import typer
 
 from qre import __version__
-from qre.cli.commands import analyze_command, ingest_command, stress_command
+from qre.cli.commands import (
+    analyze_command,
+    ingest_command,
+    monte_carlo_command,
+    stress_command,
+)
 from qre.orchestration import configure_logging
 
 app = typer.Typer(
@@ -24,6 +29,7 @@ app = typer.Typer(
 ingest_command(app)
 analyze_command(app)
 stress_command(app)
+monte_carlo_command(app)
 
 
 @app.callback()
